@@ -49,7 +49,7 @@ def mutate(in_sequence, mutations=None, offset=1):
 tem1_sequence = "HPETLVKVKDAEDQLGARVGYIELDLNSGKILESFRPEERFPMMSTFKVLLCGAVLSRVDAGQEQLGRRIHYSQNDLVEYSPVTEKHLTDGMTVRELCSAAITMSDNTAANLLLTTIGGPKELTAFLHNMGDHVTRLDRWEPELNEAIPNDERDTTMPAAMATTLRKLLTGELLTLASRQQLIDWMEADKVAGPLLRSALPAGWFIADKSGAGERGSRGIIAALGPDGKPSRIVVIYTTGSQATMDERNRQIAEIGASLIKHW"
 mutations = ["A42G", "E104K", "M182T", "G238S"]
 sequence = mutate(tem1_sequence, mutations, offset=26)
-out_dir = "./blac_" + "_".join(mutations)
+out_dir = "systems/blac_" + "_".join(mutations)
 logger.info("OUTDIR: %s", out_dir)
 sample(sequence=sequence, num_samples=2000, batch_size_100=20, output_dir=out_dir)
 # clean_output_directory(out_dir)
