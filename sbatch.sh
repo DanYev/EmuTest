@@ -11,5 +11,4 @@
 #SBATCH -e slurm_jobs/error.%A.%a.err
 
 PYSCRIPT="$@"   
-
 python $PYSCRIPT
