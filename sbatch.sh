@@ -6,7 +6,7 @@
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=1
 #SBATCH --mem=16G
-#SBATCH -G a100:1
+#SBATCH -G 1
 #SBATCH -o slurm_jobs/output.%A.%a.out
 #SBATCH -e slurm_jobs/error.%A.%a.err
 

@@ -172,7 +172,7 @@ def plot_dci():
 
 
 if __name__ == '__main__':
-    do_pca()
+    # do_pca()
     # do_dfi_dci()
     # get_averages()
     # plot_dfi()
